@@ -1,0 +1,71 @@
+// Interactive-specific css here
+
+$low = #f3ceed
+$moderate = #f1b4e3
+$high = #ef9ad8
+
+table#legend
+    margin: 15px 0
+
+    tr
+        td
+            vertical-align: top
+
+            &.swatch
+                white-space: nowrap;
+
+                b
+                    display: block
+                    width: 17px
+                    height: 17px
+                    border: 1px solid $qz-map-graticule
+
+            &.title
+                font-weight bold
+
+            &.desc
+                line-height 20px
+
+        &.low b
+            background-color: $low
+
+        &.moderate b
+            background-color: $moderate
+
+        &.high b
+            background-color: $high
+
+table
+    width 100%
+    font-family $qz-sans
+
+    thead
+        th
+            padding 4px
+            text-align left
+
+    tbody
+        tr
+            td
+                padding 4px
+                border-top 1px solid $qz-background-gray
+
+                &.name
+                    width 40%
+
+                &.value
+                    width 60%
+
+                &.low
+                    background-color $low
+
+                &.moderate
+                    background-color $moderate
+
+                &.high
+                    background-color $high
+
+.footnote
+    margin-top 20px
+    font-family $qz-sans
+    color: $qz-gray-2;
